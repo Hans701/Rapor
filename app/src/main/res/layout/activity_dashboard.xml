@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REKAP NILAI"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SDN 58 PAYAKUMBUH"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="Kelas :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="113dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablelayoutid"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:id="@+id/rowlay"
+            android:background="@android:color/holo_blue_light"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="No" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mata Pelajaran" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nilai" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pendidikan Agama dan Budi Pekerti" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaiag" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PPKN" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaipkn" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bahasa Indonesia" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaibi" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Matematika" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaimtk" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ilmu Pengetahuan Alam" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaiipa" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ilmu Pengetahuan Sosial" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaiips" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bahasa Inggris" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaien" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Seni dan Budaya" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaisb" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PJOK" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaipjok" />
+        </TableRow>
+
+        <TableRow
+            android:background="#ECEFF1"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Prakarya" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nilaipra" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
