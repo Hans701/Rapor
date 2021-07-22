@@ -26,7 +26,7 @@ public class dashboard extends AppCompatActivity {
             }
         });
 
-        profil.setOnClickListener(new View.OnClickListener() {
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent profilIntent = new Intent(dashboard.this, login.class);
