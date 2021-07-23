@@ -42,10 +42,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="#FFFFFF"
-            app:srcCompat="@drawable/user" />
+            app:srcCompat="@drawable/mail" />
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -54,7 +54,7 @@
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Username"
+            android:hint="Email"
             tools:layout_editor_absoluteX="103dp"
             tools:layout_editor_absoluteY="110dp" />
 
