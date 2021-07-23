@@ -25,7 +25,6 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     ApiEndpoint apiEndpoint;
     SessionManager sessionManager;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
