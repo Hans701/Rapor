@@ -26,16 +26,16 @@ public class SessionManager {
 
     public void createLoginSession(LData user){
         editor.putBoolean(IS_LOGGED_IN, true);
-        editor.putString(NAME, user.getName());
         editor.putString(NOMOR_INDUK, user.getNomorInduk());
+        editor.putString(NAME, user.getName());
         editor.putString(EMAIL, user.getEmail());
         editor.commit();
     }
 
     public HashMap<String,String> getUserDetail(){
         HashMap<String,String> user = new HashMap<>();
-        user.put(NAME, sharedPreferences.getString(NAME,null));
         user.put(NOMOR_INDUK, sharedPreferences.getString(NOMOR_INDUK,null));
+        user.put(NAME, sharedPreferences.getString(NAME,null));
         user.put(EMAIL, sharedPreferences.getString(EMAIL,null));
         return user;
     }
