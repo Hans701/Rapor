@@ -12,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Rapor">
+        android:theme="@style/Theme.Rapor"
+        android:usesCleartextTraffic="true">
         <activity android:name=".gantipass"></activity>
         <activity android:name=".dashboard" />
         <activity android:name=".profil" />

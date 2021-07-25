@@ -56,14 +56,37 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:gravity="center"
-            android:text="Kelas :"
+            android:text="Kelas        :"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="30dp">
 
         </TextView>
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/kelas"
+            android:layout_width="113dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="Semester :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/semester"
             android:layout_width="113dp"
             android:layout_height="match_parent" />
     </LinearLayout>
